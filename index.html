@@ -1,0 +1,131 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", sans-serif;
+            background-color: #f5f8fd;
+            color: #333;
+        }
+
+        p {
+            margin-top: 15px;
+            margin-left: 30px;
+            font-size: 9px;
+        }
+
+        #hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        #hero .container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1100px;
+            padding: 2rem;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        #hero .hero-image {
+            flex: 1;
+        }
+
+        #hero .hero-image img {
+            max-width: 100%;
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        #hero .hero-content {
+            flex: 2;
+        }
+
+        #hero .hero-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        #hero .hero-content h1 .nombre {
+            color: #149ddd;
+        }
+
+        #hero .hero-content h2 {
+            font-size: 1.5rem;
+            color: #107cae;
+            height: 40px;
+        }
+
+        #hero .hero-content .social-icons {
+            margin: 1rem 0;
+        }
+
+        #hero .hero-content .social-icons a {
+            margin-right: 15px;
+            font-size: 1.5rem;
+            color: #149ddd;
+            transition: 0.3s;
+        }
+
+        #hero .hero-content .social-icons a:hover {
+            color: #0c5b7f;
+        }
+
+        #hero .hero-content .btn-contacto {
+            padding: 0.75rem 1.5rem;
+            background-color: #149ddd;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+
+        #hero .hero-content .btn-contacto:hover {
+            background-color: #107cae;
+        }
+    </style>
+</head>
+
+<body>
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+        data-id="#" data-description="Support me on Buy me a coffee!" data-message="☕" data-color="#149ddd"
+        data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+    <section id="hero">
+        <div class="container">
+            <div class="hero-image">
+                <img src="https://avatars.githubusercontent.com/u/241991662?v=4"
+                    alt="Profil Foto" />
+            </div>
+            <div class="hero-content">
+                <h1>Halo,  saya <span class="nombre">Galih</span></h1>
+                <h2 class="typed-text"><span id="typed"></span></h2>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+                <a href="#" tooltip="" class="btn-contacto">Kontak Saya</a>
+                <p>macanbelang040@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        const typed = new Typed('#typed', {
+            strings: ['Online Marketing', 'Video Editing', 'Freelancer'],
+            typeSpeed: 50,
+            backSpeed: 25,
+            loop: true,
+        });
+    </script>
+</body>
+
+</html>
